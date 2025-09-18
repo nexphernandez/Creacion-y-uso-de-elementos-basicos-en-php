@@ -12,10 +12,10 @@ $numero1 = (int) readline("Ingresa un numero:");
 $numero2 = (int) readline("Ingresa otro numero:");
 $respuesta = "Los numero son iguales";
 if ($numero1>$numero2) {
-    $respuesta= "El numero mayor es: "$numero1;
+    $respuesta= "El numero mayor es: " . $numero1;
 }
-if ($numero1>$numero2) {
-    $repuesta="El numero mayor es: "$numero2;
+if ($numero1<$numero2) {
+    $respuesta="El numero mayor es: " . $numero2;
 }
 echo($respuesta);
 ?>
@@ -46,7 +46,7 @@ $respuesta = "El numero es positivo";
 if ($numero<0) {
     $respuesta= "El numero es negativo";
 }
-if ($numero =0) {
+if ($numero ==0) {
     $respuesta = "El numero es cero";
 }
 echo($respuesta);
@@ -62,13 +62,13 @@ echo($respuesta);
 $nota = (int) readline("¿Que nota has tenido?:");
 $respuesta = "Tienes un suspenso";
 if ($nota>4 && $nota<7) {
-    $respuesta= "tienes un aptobado";
+    $respuesta= "tienes un aprobado";
 }
 if ($nota>6 && $nota<9) {
-    $respuesta = "Tienes un notable"
+    $respuesta = "Tienes un notable";
 }
 if ($nota>8) {
-    $respuesta = "Tienes un sobresaliente"
+    $respuesta = "Tienes un sobresaliente";
 }
 echo($respuesta);
 ?>
@@ -84,7 +84,7 @@ echo($respuesta);
 ```php
 <?php
 for ($i=1; $i < 101; $i++) { 
-    echo(i);
+    echo($i . "\n");
 }
 ?>
 ```  
@@ -95,7 +95,7 @@ for ($i=1; $i < 101; $i++) {
 ```php
 <?php
 $respuesta = 0;
-for ($i=1; $i < 49; $i++) { 
+for ($i=1; $i < 51; $i++) { 
     $respuesta = $respuesta + $i;
 }
 echo($respuesta);
@@ -109,7 +109,7 @@ echo($respuesta);
 <?php
 $numero = (int) readline("Dime un numero para imprimir la tabla de multiplicar:");
 for ($i=1; $i <= 10; $i++) { 
-    echo($numero " x " $i " = " $numero * $i);
+    echo($numero . " x " . $i . " = " . $numero * $i . "\n");
 }
 ?>
 ```
@@ -119,16 +119,29 @@ for ($i=1; $i <= 10; $i++) {
 
 ```php
 <?php
-for ($i=0; $i < 50; $i++) { 
+for ($i=1; $i < 51; $i++) { 
     if($i % 2 == 0){
-        echo(i);
+        echo($i . "\n");
     }
 }
 ?>
 ```
 
 9. **Cuenta atrás**  
-   Haz un bucle que cuente de 10 a 1 y luego muestre `"¡Fin!"`.  
+   Haz un bucle que cuente de 10 a 1 y luego muestre `"¡Fin!"`.
+
+```php
+<?php
+$numero = 11;
+for ($i=0; $i < 11; $i++) { 
+    $numero --;
+    if($numero == 0){
+        $numero="¡Fin!";
+    }
+    echo($numero . "\n");
+}
+?>
+```
 
 10. **Factorial**  
     Calcula el factorial de un número introducido (ejemplo: `5! = 120`).  
