@@ -146,6 +146,17 @@ for ($i=0; $i < 11; $i++) {
 10. **Factorial**  
     Calcula el factorial de un número introducido (ejemplo: `5! = 120`).  
 
+```php
+<?php
+$numero = (int) readline("Introduce un numero para calcular el factorial:");
+$respuesta = 1;
+for ($i=$numero; $i > 0; $i--) { 
+    $respuesta *= $i;
+}
+echo($respuesta);
+?>
+```
+
 ---
 
 ### 3️⃣ Combinando Condicionales y Bucles
