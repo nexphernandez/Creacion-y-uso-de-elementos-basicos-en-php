@@ -91,7 +91,7 @@ for ($i=1; $i < 101; $i++) {
 
 6. **Suma acumulada**  
    Calcula la suma de los números del 1 al 50 usando un bucle.  
-   
+
 ```php
 <?php
 $respuesta = 0;
@@ -104,6 +104,15 @@ echo($respuesta);
 
 7. **Tabla de multiplicar**  
    Pide un número y genera su tabla de multiplicar del 1 al 10.  
+
+```php
+<?php
+$numero = (int) readline("Dime un numero para imprimir la tabla de multiplicar:");
+for ($i=1; $i <= 10; $i++) { 
+    echo($numero " x " $i " = " $numero * $i);
+}
+?>
+```
 
 8. **Números pares**  
    Muestra todos los números pares entre 1 y 50.  
