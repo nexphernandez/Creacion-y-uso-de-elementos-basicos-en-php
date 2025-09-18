@@ -202,7 +202,20 @@ for ($i=0; $i <= 18; $i++) {
 ```
 
 13. **Múltiplos de un número**  
-    Pide un número `n` y muestra sus múltiplos hasta 100.  
+    Pide un número `n` y muestra sus múltiplos hasta 100. 
+```php
+<?php
+$numero = (int) readline("Dime un numero:");
+
+for ($i=1; $i <= 100; $i++) { 
+    $respuesta = $numero *$i;
+    if($respuesta>100){
+        break;
+    }
+    echo $respuesta . "\n";
+}
+?> 
+```
 
 14. **Suma de pares e impares**  
     Calcula la suma de los números pares e impares entre 1 y 100 por separado.  
