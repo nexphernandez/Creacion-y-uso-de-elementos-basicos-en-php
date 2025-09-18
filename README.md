@@ -258,7 +258,24 @@ echo $respuesta;
 ### 4️⃣ Construcción de Algorítmicos
 
 16. **Número perfecto**  
-    Comprueba si un número es perfecto (la suma de sus divisores propios es igual al número).  
+    Comprueba si un número es perfecto (la suma de sus divisores propios es igual al número). 
+     
+```php
+<?php
+$numero = (int) readline("Dime un numero para verificar si es un numero perfecto ");
+$suma = 0;
+$resultado = "El numero no es perfecto";
+for ($i=1; $i <$numero ; $i++) { 
+    if($numero % $i == 0){
+        $suma += $i;
+    }
+}
+if ($suma == $numero) {
+    $resultado = "El numero es perfecto";
+}
+echo $resultado;
+?>
+```
 
 17. **Invertir número**  
     Escribe un algoritmo que invierta los dígitos de un número (ejemplo: `123 → 321`).  
