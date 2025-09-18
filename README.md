@@ -38,6 +38,20 @@ echo($respuesta);
 ```
 3. **Positivo, negativo o cero**  
    Comprueba si un número almacenado en una variable es positivo, negativo o cero.  
+   
+```php
+<?php
+$numero = 18;
+$respuesta = "El numero es positivo";
+if ($numero<0) {
+    $respuesta= "El numero es negativo";
+}
+if ($numero =0) {
+    $respuesta = "El numero es cero";
+}
+echo($respuesta);
+?>
+```
 
 4. **Nota final**  
    Pide la nota de un alumno y muestra:  
