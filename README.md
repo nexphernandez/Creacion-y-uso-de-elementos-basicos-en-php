@@ -79,7 +79,15 @@ echo($respuesta);
 ### 2️⃣ Bucles (for, while, foreach)
 
 5. **Contar del 1 al 100**  
-   Muestra los números del 1 al 100 en pantalla.  
+   Muestra los números del 1 al 100 en pantalla.
+
+```php
+<?php
+for ($i=1; $i < 101; $i++) { 
+    echo(i);
+}
+?>
+```  
 
 6. **Suma acumulada**  
    Calcula la suma de los números del 1 al 50 usando un bucle.  
