@@ -184,6 +184,23 @@ for ($i=2; $i <= 50; $i++) {
 12. **Fibonacci**  
     Genera los primeros 20 términos de la secuencia de Fibonacci.  
 
+```php
+<?php
+$numero1 = 0;
+$numero2 = 1;
+
+echo $numero1 ."\n";
+echo $numero2 ."\n";
+
+for ($i=0; $i <= 18; $i++) { 
+    $respuesta = $numero1 + $numero2;
+    echo $respuesta . "\n";
+    $numero1 = $numero2;
+    $numero2 = $respuesta;
+}
+?>
+```
+
 13. **Múltiplos de un número**  
     Pide un número `n` y muestra sus múltiplos hasta 100.  
 
