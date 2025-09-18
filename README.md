@@ -57,6 +57,23 @@ echo($respuesta);
    Pide la nota de un alumno y muestra:  
    - `"Suspenso"` (< 5), `"Aprobado"` (5–6), `"Notable"` (7–8), `"Sobresaliente"` (9–10).  
 
+```php
+<?php
+$nota = (int) readline("¿Que nota has tenido?:");
+$respuesta = "Tienes un suspenso";
+if ($nota>4 && $nota<7) {
+    $respuesta= "tienes un aptobado";
+}
+if ($nota>6 && $nota<9) {
+    $respuesta = "Tienes un notable"
+}
+if ($nota>8) {
+    $respuesta = "Tienes un sobresaliente"
+}
+echo($respuesta);
+?>
+```
+
 ---
 
 ### 2️⃣ Bucles (for, while, foreach)
