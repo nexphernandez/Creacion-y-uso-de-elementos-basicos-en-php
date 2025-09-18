@@ -308,6 +308,18 @@ echo $resultado;
 19. **Máximo común divisor (MCD)**  
     Escribe un algoritmo que calcule el MCD de dos números.  
 
+```php
+<?php
+$numero1 =(int) readline("Dime un numero para calcular el mcd:");
+$numero2 =(int) readline("Dime otro numero para calcular el mcd:");
+while($numero2 !=0){
+    $resto = $numero1 % $numero2;
+    $numero1 = $numero2;
+    $numero2 = $resto;
+}
+echo "El MCD de los dos numeros es $numero1 ";
+?>
+```
 20. **Triángulo de asteriscos**  
     Muestra en pantalla un triángulo de altura `n` usando `*`.  
     Ejemplo con `n = 5`:  
