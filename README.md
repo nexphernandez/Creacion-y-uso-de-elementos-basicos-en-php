@@ -91,6 +91,16 @@ for ($i=1; $i < 101; $i++) {
 
 6. **Suma acumulada**  
    Calcula la suma de los números del 1 al 50 usando un bucle.  
+   
+```php
+<?php
+$respuesta = 0;
+for ($i=1; $i < 49; $i++) { 
+    $respuesta = $respuesta + $i;
+}
+echo($respuesta);
+?>
+```
 
 7. **Tabla de multiplicar**  
    Pide un número y genera su tabla de multiplicar del 1 al 10.  
