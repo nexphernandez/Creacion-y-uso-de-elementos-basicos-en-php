@@ -117,6 +117,16 @@ for ($i=1; $i <= 10; $i++) {
 8. **Números pares**  
    Muestra todos los números pares entre 1 y 50.  
 
+```php
+<?php
+for ($i=0; $i < 50; $i++) { 
+    if($i % 2 == 0){
+        echo(i);
+    }
+}
+?>
+```
+
 9. **Cuenta atrás**  
    Haz un bucle que cuente de 10 a 1 y luego muestre `"¡Fin!"`.  
 
