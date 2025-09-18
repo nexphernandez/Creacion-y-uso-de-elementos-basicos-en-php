@@ -26,6 +26,16 @@ echo($respuesta);
    - `"Eres menor de edad"` si es < 18.  
    - `"Eres mayor de edad"` si es ≥ 18.  
 
+```php
+<?php
+$edad = (int) readline("Ingresa tu edad:");
+$respuesta = "Eres menor de edad";
+if ($edad>=18) {
+    $respuesta= "Eres mayor de edad";
+}
+echo($respuesta);
+?>
+```
 3. **Positivo, negativo o cero**  
    Comprueba si un número almacenado en una variable es positivo, negativo o cero.  
 
