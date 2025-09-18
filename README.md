@@ -293,6 +293,18 @@ echo $invertido;
 18. **Palíndromo**  
     Comprueba si una palabra almacenada en una variable es palíndroma.  
 
+```php
+<?php
+$palabra = (string) readline("Dime una palabra para invertirla ");
+$invertido = strrev($palabra);
+$resultado = "La palabra " . $palabra  ." no es palindroma";
+if ($palabra == $invertido) {
+    $resultado = "La palabra " . $palabra  ." es palindroma";
+}
+echo $resultado;
+?>
+```
+
 19. **Máximo común divisor (MCD)**  
     Escribe un algoritmo que calcule el MCD de dos números.  
 
