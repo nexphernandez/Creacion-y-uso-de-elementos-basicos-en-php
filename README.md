@@ -280,6 +280,16 @@ echo $resultado;
 17. **Invertir número**  
     Escribe un algoritmo que invierta los dígitos de un número (ejemplo: `123 → 321`).  
 
+```php
+<?php
+$numero = (int) readline("Dime un numero para invertir sus digitos ");
+$numeroStr = strval($numero);
+$invertidoStr = strrev($numeroStr);
+$invertido = (int) $invertidoStr;
+echo $invertido;
+?>
+```
+
 18. **Palíndromo**  
     Comprueba si una palabra almacenada en una variable es palíndroma.  
 
