@@ -164,6 +164,23 @@ echo($respuesta);
 11. **Números primos**  
     Escribe un algoritmo que muestre los números primos entre 1 y 50.  
 
+```php
+<?php
+for ($i=2; $i <= 50; $i++) { 
+    $esprimo = true;
+    for ($j=2; $j <= i-1 ; $j++) { 
+        if ($i % $j == 0) {
+            $esprimo = false;
+            break;
+        }
+    }
+    if ($esprimo) {
+        echo $i . "\n";
+    }
+}
+?>
+```
+
 12. **Fibonacci**  
     Genera los primeros 20 términos de la secuencia de Fibonacci.  
 
