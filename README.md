@@ -218,7 +218,25 @@ for ($i=1; $i <= 100; $i++) {
 ```
 
 14. **Suma de pares e impares**  
-    Calcula la suma de los números pares e impares entre 1 y 100 por separado.  
+    Calcula la suma de los números pares e impares entre 1 y 100 por separado. 
+
+```php
+<?php
+$sumaPares = 0;
+$sumaImpares = 0;
+
+for ($i=0; $i <= 100; $i++) { 
+    if($i % 2 == 0){
+        $sumaPares += $i;
+    }
+    if($i % 2 != 0){
+        $sumaImpares += $i;
+    }
+}
+echo "La suma de los numeros pares da = " . $sumaPares . "\n";
+echo "La suma de los numeros impares da = " . $sumaImpares . "\n";
+?>
+``` 
 
 15. **Adivinar número**  
     Genera un número aleatorio entre 1 y 20.  

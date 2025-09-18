@@ -1,11 +1,16 @@
 <?php
-$numero = (int) readline("Dime un numero:");
+$sumaPares = 0;
+$sumaImpares = 0;
 
-for ($i=1; $i <= 100; $i++) { 
-    $respuesta = $numero *$i;
-    if($respuesta>100){
-        break;
+for ($i=0; $i <= 100; $i++) { 
+    if($i % 2 == 0){
+        $sumaPares += $i;
     }
-    echo $respuesta . "\n";
+    if($i % 2 != 0){
+        $sumaImpares += $i;
+    }
 }
+echo "La suma de los numeros pares da = " . $sumaPares . "\n";
+echo "La suma de los numeros impares da = " . $sumaImpares . "\n";
+
 ?>
